@@ -1,7 +1,7 @@
 # pve-toggle-nag-subscription
 Enable or disable the subscription pop-up window in proxmox.
-This is written in zsh using sed, grep, and cut
-we find the line around line 614, this can easily change in updates.
+This is written in zsh using sed, grep, and cut.
+We find the line to be edited around line 614, this can easily change in updates.
 the string is a boolean comparison that determines if the subscription is active or not.
 default for no-subscription is not active, !== 'active'
 we remove the !bang and replace it with nothing. This makes the subscription always active.
